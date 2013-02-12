@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Galindo);
+
+header {
+	font-family:galindo;
+	background:transparent url(img/contact.png) no-repeat;
+	padding:40px 0px 40px 220px;
+}
+
+header a {
+	display:inline-block;
+	color:#000;
+	-webkit-transition:-webkit-transform 0.25s, color 0.25s;
+}
+
+header a:hover {
+	color:#578C58;
+	-webkit-transform:rotate(3deg);
+	text-decoration:none;
+}
+
+header h2 {
+	font-size:22px;
+	color:#999;
+}
+
+header h1, header h2 {
+	margin:0px;
+}
+
+input.phone {
+	text-align:center;
+}
+
+input.phone.span1 {
+	width:30px;
+}
+
+input.phone.span2 {
+	width:40px;
+}
