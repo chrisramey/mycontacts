@@ -24,6 +24,13 @@
 				<td><?php echo $contact_firstname ?> <?php echo $contact_lastname ?></td>
 				<td><a href="mailto:<?php echo $contact_email ?>"><?php echo $contact_email ?></a></td>
 				<td><?php echo format_phone($contact_phone) ?></td>
+				<td>
+					<a class="btn btn-warning btn-mini" href="./?p=form_edit_contact&id=<?php echo $contact_id?>"><i class="icon-edit icon-white"></i></a> 
+					<form class="form-inline" action="actions/delete_contact.php">
+						<input type="hidden" name="contact_id" value="<?php echo $contact_id?>" />
+						<button class="btn btn-danger btn-mini" type="submit"><i class="icon-trash icon-white"></i></button>
+					</form>
+				</td>
 			</tr>
 		<?php }
 		

@@ -38,3 +38,8 @@ input.phone.span1 {
 input.phone.span2 {
 	width:40px;
 }
+
+.form-inline {
+	display:inline-block;
+	margin-bottom:0px;
+}

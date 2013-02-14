@@ -40,7 +40,7 @@ extract($_POST);
 $contact_phone = $contact_phone1.$contact_phone2.$contact_phone3;
 
 // Connect to DB
-$conn = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+$conn = connect();
 
 // Query DB
 $sql = "INSERT INTO contacts (contact_firstname,contact_lastname,contact_email,contact_phone) VALUES ('$contact_firstname','$contact_lastname','$contact_email',$contact_phone)";

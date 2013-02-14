@@ -1,4 +1,8 @@
 <?php
+function connect() {
+	return new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+}
+
 function format_phone($phone) {
 	$number = '1-'.substr($phone,0,3).'-'.substr($phone,3,3).'-'.substr($phone,-4);
 	return '('.substr($phone,0,3).') '.substr($phone,3,3).'-'.substr($phone,-4);
@@ -22,8 +26,6 @@ function input($name, $placeholder, $value=null, $class='') {
 		if($value == '') { // nothing was entered for this item in the form
 			$class .= ' error';
 		}
-	} else { // No session data (probably first time visiting form)
-		$value = ''; // no pre-populated value
 	}
 	return "<input class=\"$class\" type=\"text\" name=\"$name\" placeholder=\"$placeholder\" value=\"$value\" />";
 }
