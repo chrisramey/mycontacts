@@ -43,7 +43,7 @@ $contact_phone3 = substr($contact_phone, -4);
 		</div>
 	</div>
 	<div class="form-actions">
-		<button type="submit" class="btn btn-success"><i class="icon-plus-sign icon-white"></i> Add Contact</button>
+		<button type="submit" class="btn btn-warning"><i class="icon-edit icon-white"></i> Update</button>
 		<button type="button" class="btn">Cancel</button>
 	</div>
 </form>
